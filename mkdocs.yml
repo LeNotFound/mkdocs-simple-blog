@@ -18,6 +18,7 @@ nav:
       - nav/styles/highlightjs.md
       - nav/styles/favicon.md
       - nav/styles/colors.md
+      - nav/styles/fonts.md
       - nav/styles/logo.md
     - Development:
       - nav/development/development-guide.md
@@ -33,6 +34,7 @@ theme:
   sidebar: true
   navigation_depth: 2
   highlightjs: true
+  hljs_languages:
     - yaml
     - python
   colors:

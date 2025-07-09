@@ -4,6 +4,20 @@ January 17, 2023
 
 ---
 
+## 字体加载控制
+
+主题默认加载 Google Fonts (Fira Mono)。如果你不想使用 Google Fonts，可以通过设置 `font: false` 来禁用它们：
+
+- 默认: 自动加载 Google Fonts
+- 禁用 Google Fonts: 设置 `font: false`
+
+```yml
+theme:
+  font: false  # 禁用 Google Fonts 加载
+```
+
+**注意**: 设置 `font: false` 后，网站将使用浏览器默认字体或你自定义的 CSS 字体。其他字体样式设置（如 `site_name_style` 和 `title_style`）仍然有效。
+
 ## Changing the fonts
 
 ### Site name style

@@ -33,7 +33,9 @@
         {%- endblock %}
 
         {%- block styles %}
+            {%- if config.theme.font is not defined or config.theme.font != false %}
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+            {%- endif %}
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
             <link rel="stylesheet" href="{{ 'assets/css/bootstrap.min.css'|url }}">
@@ -127,9 +129,9 @@
         {%- block scripts %}
 
             <script>var base_url = '{{ base_url }}';</script>
-            <script src="{{ 'assets/js/jquery-3.3.1.slim.min.js"'|url }}"></script>
-            <script src="{{ 'assets/js/bootstrap.bundle.min.js"'|url }}"></script>
-            <script src="{{ 'assets/js/main.min.js"'|url }}"></script>
+            <script src="{{ 'assets/js/jquery-3.3.1.slim.min.js'|url }}"></script>
+            <script src="{{ 'assets/js/bootstrap.bundle.min.js'|url }}"></script>
+            <script src="{{ 'assets/js/main.min.js'|url }}"></script>
 
             {%- for path in extra_javascript %}
                 <script src="{{ path }}" defer></script>
